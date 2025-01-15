@@ -444,6 +444,68 @@ li, p {
     color: #383842;
 }
 
+/*----------MOBILE experience----------*/
+.experiece-grid {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+.experiece-grid  .exp{
+    width: 300px;
+    height: 400px;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    position: relative;
+    border-top: 2px solid  #f8cfae;
+    border-right: 2px solid  #f8cfae;
+    border-radius: 5px;
+}
+.exp .icon span{
+    font-size: 80px;
+    padding-bottom: 20px;
+}
+.exp h5{
+    font-size: 18px;
+    padding-bottom: 20px;
+    z-index: 2;
+}
+.exp p{
+    font-size: 14px;
+    line-height: 18px;
+}
+.exp p, .exp .icon {
+    z-index: 2;
+}
+.exp .triangle-orange {
+    width: 285px;
+    height: 385px;
+    background-color: #fcf6e5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+   /*border-top: 2px solid  #f8cfae;
+    border-right: 2px solid  #f8cfae;
+    */
+    border-radius: 5px;
+}
+.exp .triangle-green {
+    width: 300px;
+    height: 400px;
+    background-color: #dbefda;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(100% 100%, 0% 100%, 0% 0%);
+    z-index: 0;
+}
 /*----------MOBILE projects----------*/
 .projects-header {
     z-index: 2;
@@ -463,6 +525,7 @@ li, p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
+
 }
 .project-images img{
     width: 100%;
@@ -609,5 +672,15 @@ li, p {
     transform: rotate(180deg);
     z-index: 0;
 }
+/*----------DESKTOP experience----------*/
+.exp h5{
+    font-size: 20px;
+    padding-bottom: 20px;
+    z-index: 2;
+}
+.experiece-grid  .exp{
+    justify-self: left;
+}
 
 }
+
