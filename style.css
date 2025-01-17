@@ -516,7 +516,7 @@ li, p {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .project-images {
     width: 100%;
@@ -547,7 +547,7 @@ li, p {
     padding: 100px 0 ;
     color: #383842;
 }
-.projects-links{
+/*.projects-links{
     width: 100%;
     max-width: 500px;
     margin: 60px auto 0;
@@ -572,7 +572,7 @@ li, p {
 }
 .projects-links a:hover{
     background-color: #f8cfae;
-}
+}*/
 
 
 
