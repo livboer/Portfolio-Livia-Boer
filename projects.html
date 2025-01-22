@@ -318,6 +318,31 @@
     </div>
     <div class="orange-bottom"></div>
     <script src="app.js"></script>
+    <script>
+// Get the query parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectId = urlParams.get('project');
+
+        // Hide all project sections by default
+        document.querySelectorAll('.projects-header').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the specific project section if it matches the query parameter
+        if (projectId) {
+            const activeSection = document.getElementById(projectId);
+            if (activeSection) {
+                // Show the entire section
+                activeSection.style.display = 'block';
+
+                // Ensure all nested elements are visible
+                activeSection.querySelectorAll('*').forEach(child => {
+                    child.style.display = '';
+                });
+            }
+        }
+
+    </script>
 </body>
 
 </html>

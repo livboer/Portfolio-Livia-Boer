@@ -142,35 +142,35 @@
         <section class="portfolio">
             <h3>work</h3>
             <div class="works-grid">
-                <div class="work">
+                <div class="work" data-id="novarion">
                     <div class="work-img">
                         <img src="./media/cover-novarion.png" alt="">
                     </div>
                     <h4>NOVARION</h4>
                     <p>2022-present</p>
                 </div>
-                <div class="work">
+                <div class="work" data-id="Universo-Potencial">
                     <div class="work-img">
                         <img src="./media/cover-up.png" alt="">
                     </div>
                     <h4>Universo Potencial</h4>
                     <p>2020-present</p>
                 </div>
-                <div class="work">
+                <div class="work" data-id="Direto-ao-Ponto">
                     <div class="work-img">
                         <img src="./media/cover-dap.png" alt="">
                     </div>
                     <h4>Direto ao Ponto</h4>
                     <p>2021</p>
                 </div>
-                <div class="work">
+                <div class="work" data-id="Pizza-de-casa">
                     <div class="work-img">
                         <img src="./media/cover-pdc.png" alt="">
                     </div>
                     <h4>Pizza de Casă</h4>
                     <p>2020-2021</p>
                 </div>
-                <div class="work">
+                <div class="work" data-id="Josafa-Dantas">
                     <div class="work-img">
                         <img src="./media/cover-josa.png" alt="">
                     </div>
@@ -180,6 +180,7 @@
             </div>
         </section>
     </div>
+    
 
     <section class="contact" id="contact">
 
@@ -217,6 +218,15 @@
     
     <div class="orange-bottom"></div>
     <script src="app.js"></script>
+    <script>
+        // Add click event listener to all works
+        document.querySelectorAll('.work').forEach(work => {
+            work.addEventListener('click', function () {
+                const projectId = this.getAttribute('data-id');
+                window.location.href = `projects.html?project=${projectId}`;
+            });
+        });
+    </script>
 </body>
 
 </html>

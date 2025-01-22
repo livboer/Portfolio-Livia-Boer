@@ -511,7 +511,9 @@ li, p {
 /*----------MOBILE projects page----------*/
 .projects-header {
     z-index: 2;
+
 }
+
 .projects-header a {
     color: #383842;
     text-decoration: none;
