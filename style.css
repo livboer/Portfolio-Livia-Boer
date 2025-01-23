@@ -759,7 +759,7 @@ li, p {
     width: 50%;
 }
 .division {
-    width: 2px ;
+    width: 2px !important;
     height: 200px;
     margin: 0 50px;
     align-self: center;
