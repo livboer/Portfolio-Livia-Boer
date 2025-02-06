@@ -608,7 +608,32 @@ li, p {
     padding-bottom: 40px;
 }
 
-
+/*-----novarion-----*/
+.fb-campaigns {
+    margin: 20px 0;
+}
+.single-fb-campaign{
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #f0f1f3;
+}
+.single-fb-campaign img {
+    width: 95%;
+    margin: 0 auto;
+}
+.results-fb-campaign{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px ;
+}
+#no-bckgd{
+    background-color: #fff;
+}
 
 
 
@@ -789,6 +814,30 @@ li, p {
     height: 500px;
 }
 
+
+/*-----novarion-----*/
+.single-fb-campaign{
+    width: 100%;
+    margin: 40px 0 0;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+    /*width: 80%;
+    align-items: center;*/
+}
+.single-fb-campaign img {
+    width: 300px;
+    margin: 0 0;
+}
+.results-fb-campaign{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: left;
+    justify-content: center;
+    padding: 0;
+    width: 40%;
+}
 
 
 }
