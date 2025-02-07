@@ -249,6 +249,20 @@ body {
     display: none;
 }
 
+.language{
+    display: flex;
+    justify-content: end;
+}
+.language a {
+    font-weight: 500;
+    color: #383842;
+    z-index: 20 !important;
+    text-decoration: none;
+}
+.language a:hover {
+    text-decoration: underline;
+}
+
 header {
     width: 100%;
     margin: 0 auto;
