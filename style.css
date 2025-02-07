@@ -249,19 +249,7 @@ body {
     display: none;
 }
 
-.language{
-    display: flex;
-    justify-content: end;
-}
-.language a {
-    font-weight: 500;
-    color: #383842;
-    z-index: 20 !important;
-    text-decoration: none;
-}
-.language a:hover {
-    text-decoration: underline;
-}
+
 
 header {
     width: 100%;
@@ -285,6 +273,22 @@ header {
     border-radius: 100%;
     border: 3px solid #f8cfae;
     z-index: 2;
+}
+.language{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.language a {
+    font-weight: 500;
+    color: #383842;
+    z-index: 20 !important;
+    text-decoration: none;
+}
+.language a:hover {
+    text-decoration: underline;
 }
 
 .name {
